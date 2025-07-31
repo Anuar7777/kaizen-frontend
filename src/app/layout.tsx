@@ -1,17 +1,15 @@
 import type { Metadata } from 'next'
-import { Noto_Sans } from 'next/font/google'
+import { Open_Sans } from 'next/font/google'
 
 import { SITE_NAME } from '@/constants/seo.constants'
 
 import './globals.css'
 import { Providers } from './providers'
 
-const notoSans = Noto_Sans({
-	subsets: ['cyrillic', 'latin'],
-	weight: ['300', '400', '500', '600', '700'],
-	display: 'swap',
-	variable: '--font-noto',
-	style: 'normal'
+const openSans = Open_Sans({
+	subsets: ['latin', 'cyrillic'],
+	weight: ['400', '600', '700'],
+	display: 'swap'
 })
 
 export const metadata: Metadata = {
@@ -29,7 +27,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${notoSans.variable} antialiased`}>
+			<body className={`${openSans.className} antialiased`}>
 				<Providers>{children}</Providers>
 			</body>
 		</html>

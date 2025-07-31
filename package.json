@@ -25,7 +25,7 @@
     "react": "19.1.0",
     "react-day-picker": "^9.8.0",
     "react-dom": "19.1.0",
-    "react-hook-form": "^7.60.0",
+    "react-hook-form": "^7.61.1",
     "sass": "^1.89.2",
     "sonner": "^2.0.6",
     "tailwind-variants": "^1.0.0"
@@ -38,6 +38,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "eslint": "9.32.0",
+    "eslint-config-next": "15.4.5",
     "prettier": "^3.6.2",
     "tailwindcss": "^4",
     "typescript": "^5"

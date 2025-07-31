@@ -1,7 +1,16 @@
 @import 'tailwindcss';
 
-:root {
+@theme inline {
+	--color-primary: #1868db;
+	--color-primary-dark: #133972;
+	--color-silver: #b8b8b8;
 }
 
-@theme inline {
+@layer base {
+	:root {
+		background: #1868db;
+		color: #fff;
+		margin: 0;
+		box-sizing: border-box;
+	}
 }
